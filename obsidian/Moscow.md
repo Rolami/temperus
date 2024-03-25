@@ -35,3 +35,7 @@ Youtube playlist
 Timed songs
 Select own sounds
 Calendar
+
+Speed reader
+Text to speech
+TLDR chat gpt
