@@ -9,7 +9,6 @@
   
   
   <ItemGroup>
-    <PackageReference Include="Heron.MudCalendar" Version="1.1.1" />
     <ProjectReference Include="..\temperus.Client\temperus.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.*" />
   </ItemGroup>

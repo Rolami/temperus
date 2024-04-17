@@ -1,14 +1,10 @@
 ﻿@inherits LayoutComponentBase
-@* Calendar imports *@
-<link href="_content/Heron.MudCalendar/Heron.MudCalendar.min.css" rel="stylesheet" />
-<script src="_content/Heron.MudCalendar/Heron.MudCalendar.js"></script>
-@* Calendar imports *@
+
 
 <MudThemeProvider @ref="@_mudThemeProvider" @bind-IsDarkMode="@_isDarkMode"/>
 <MudLayout>
     <MudAppBar Elevation="1">
-        <MudText Typo="Typo.h5" Class="ml-3">Welcome to @_today, today is your day.</MudText>
-        <Clock/>
+        <MudText Typo="Typo.h5" Class="ml-3">Welcome to @_today, today is your day. |   </MudText>
     </MudAppBar>
     @* <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2"> *@
     @*     <NavMenu /> *@

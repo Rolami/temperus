@@ -2,112 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "Heron.MudCalendar/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "7.0.5",
-          "Microsoft.Extensions.Localization": "7.0.5",
-          "MudBlazor": "6.11.0"
-        },
-        "compile": {
-          "lib/net7.0/Heron.MudCalendar.dll": {}
-        },
-        "runtime": {
-          "lib/net7.0/Heron.MudCalendar.dll": {}
-        },
-        "resource": {
-          "lib/net7.0/bg/Heron.MudCalendar.resources.dll": {
-            "locale": "bg"
-          },
-          "lib/net7.0/cs/Heron.MudCalendar.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net7.0/da/Heron.MudCalendar.resources.dll": {
-            "locale": "da"
-          },
-          "lib/net7.0/de/Heron.MudCalendar.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net7.0/el/Heron.MudCalendar.resources.dll": {
-            "locale": "el"
-          },
-          "lib/net7.0/es/Heron.MudCalendar.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net7.0/et/Heron.MudCalendar.resources.dll": {
-            "locale": "et"
-          },
-          "lib/net7.0/fi/Heron.MudCalendar.resources.dll": {
-            "locale": "fi"
-          },
-          "lib/net7.0/fr/Heron.MudCalendar.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net7.0/hu/Heron.MudCalendar.resources.dll": {
-            "locale": "hu"
-          },
-          "lib/net7.0/id/Heron.MudCalendar.resources.dll": {
-            "locale": "id"
-          },
-          "lib/net7.0/it/Heron.MudCalendar.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net7.0/ja/Heron.MudCalendar.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net7.0/ko/Heron.MudCalendar.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net7.0/lt/Heron.MudCalendar.resources.dll": {
-            "locale": "lt"
-          },
-          "lib/net7.0/lv/Heron.MudCalendar.resources.dll": {
-            "locale": "lv"
-          },
-          "lib/net7.0/nb/Heron.MudCalendar.resources.dll": {
-            "locale": "nb"
-          },
-          "lib/net7.0/nl/Heron.MudCalendar.resources.dll": {
-            "locale": "nl"
-          },
-          "lib/net7.0/pl/Heron.MudCalendar.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net7.0/pt/Heron.MudCalendar.resources.dll": {
-            "locale": "pt"
-          },
-          "lib/net7.0/ro/Heron.MudCalendar.resources.dll": {
-            "locale": "ro"
-          },
-          "lib/net7.0/ru/Heron.MudCalendar.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net7.0/sk/Heron.MudCalendar.resources.dll": {
-            "locale": "sk"
-          },
-          "lib/net7.0/sl/Heron.MudCalendar.resources.dll": {
-            "locale": "sl"
-          },
-          "lib/net7.0/sv/Heron.MudCalendar.resources.dll": {
-            "locale": "sv"
-          },
-          "lib/net7.0/tr/Heron.MudCalendar.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net7.0/uk/Heron.MudCalendar.resources.dll": {
-            "locale": "uk"
-          },
-          "lib/net7.0/zh/Heron.MudCalendar.resources.dll": {
-            "locale": "zh"
-          }
-        },
-        "build": {
-          "buildTransitive/Heron.MudCalendar.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Heron.MudCalendar.props": {}
-        }
-      },
       "Microsoft.AspNetCore.Authorization/8.0.4": {
         "type": "package",
         "dependencies": {
@@ -671,83 +565,6 @@
     }
   },
   "libraries": {
-    "Heron.MudCalendar/1.1.1": {
-      "sha512": "qjC1g01tWse/CRwuRzrbWBULt4Um3eZ8buyMcNbFslpUSX2x21h+rQ/2rWwAvoEz2p7NVgkax3vgE0V9VUQECA==",
-      "type": "package",
-      "path": "heron.mudcalendar/1.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "README.md",
-        "build/Heron.MudCalendar.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/Heron.MudCalendar.props",
-        "buildTransitive/Heron.MudCalendar.props",
-        "heron.mudcalendar.1.1.1.nupkg.sha512",
-        "heron.mudcalendar.nuspec",
-        "lib/net6.0/Heron.MudCalendar.dll",
-        "lib/net6.0/bg/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/cs/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/da/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/de/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/el/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/es/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/et/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/fi/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/fr/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/hu/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/id/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/it/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/ja/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/ko/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/lt/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/lv/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/nb/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/nl/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/pl/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/pt/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/ro/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/ru/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/sk/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/sl/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/sv/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/tr/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/uk/Heron.MudCalendar.resources.dll",
-        "lib/net6.0/zh/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/Heron.MudCalendar.dll",
-        "lib/net7.0/bg/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/cs/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/da/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/de/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/el/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/es/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/et/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/fi/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/fr/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/hu/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/id/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/it/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/ja/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/ko/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/lt/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/lv/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/nb/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/nl/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/pl/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/pt/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/ro/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/ru/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/sk/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/sl/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/sv/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/tr/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/uk/Heron.MudCalendar.resources.dll",
-        "lib/net7.0/zh/Heron.MudCalendar.resources.dll",
-        "staticwebassets/Heron.MudCalendar.min.css",
-        "staticwebassets/Heron.MudCalendar.min.js"
-      ]
-    },
     "Microsoft.AspNetCore.Authorization/8.0.4": {
       "sha512": "dzYUHvqyavBiYVd5BZNAgV5rT+DC4HyIWPnbeYgxQNBYOFomvvwzPfidQf1Ld/HhkXhEj3tlzqNb4gy2P2ukUg==",
       "type": "package",
@@ -1627,7 +1444,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Heron.MudCalendar >= 1.1.1",
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 8.*",
       "temperus.Client >= 1.0.0"
     ]
@@ -1674,21 +1490,12 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "Heron.MudCalendar": {
-            "target": "Package",
-            "version": "[1.1.1, )"
-          },
           "Microsoft.AspNetCore.Components.WebAssembly.Server": {
             "target": "Package",
             "version": "[8.*, )"

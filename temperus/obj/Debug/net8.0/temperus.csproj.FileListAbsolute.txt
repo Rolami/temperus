@@ -1,0 +1,10 @@
+C:\Users\dream\Repos\temperus\temperus\obj\Debug\net8.0\temperus.csproj.AssemblyReference.cache
+C:\Users\dream\Repos\temperus\temperus\obj\Debug\net8.0\temperus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dream\Repos\temperus\temperus\obj\Debug\net8.0\temperus.AssemblyInfoInputs.cache
+C:\Users\dream\Repos\temperus\temperus\obj\Debug\net8.0\temperus.AssemblyInfo.cs
+C:\Users\dream\Repos\temperus\temperus\obj\Debug\net8.0\temperus.csproj.CoreCompileInputs.cache
+C:\Users\dream\Repos\temperus\temperus\obj\Debug\net8.0\temperus.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dream\Repos\temperus\temperus\obj\Debug\net8.0\temperus.sourcelink.json
+C:\Users\dream\Repos\temperus\temperus\obj\Debug\net8.0\temperus.dll
+C:\Users\dream\Repos\temperus\temperus\obj\Debug\net8.0\refint\temperus.dll
+C:\Users\dream\Repos\temperus\temperus\obj\Debug\net8.0\temperus.pdb

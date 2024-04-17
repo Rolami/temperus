@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "LvgXk05e77P7WlszpH1aBpEKOsBO524F1rnqmwRa29mlMwYoxGaayo7N/xDR6p6vOhyRSeTpQ5FpUrzAkN1R0A==",
+  "dgSpecHash": "upAs/EEBB3jXIivUZTzaAV5XN/uRGMmLA0sIUC/n4kpqwGjiQNXyM99Q7ggcltJk9jj9nfeFAK0aJqh1AZDVYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\dream\\Repos\\temperus\\temperus\\temperus.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dream\\.nuget\\packages\\heron.mudcalendar\\1.1.1\\heron.mudcalendar.1.1.1.nupkg.sha512",
     "C:\\Users\\dream\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.4\\microsoft.aspnetcore.authorization.8.0.4.nupkg.sha512",
     "C:\\Users\\dream\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.4\\microsoft.aspnetcore.components.8.0.4.nupkg.sha512",
     "C:\\Users\\dream\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.4\\microsoft.aspnetcore.components.analyzers.8.0.4.nupkg.sha512",

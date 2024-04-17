@@ -1,32 +1,85 @@
-@page "/"
+@inject IJSRuntime JSRuntime
 
-@implements IDisposable
+@page "/Timer"
 
-<p>@theTime</p>
+
+<h1 id="timer">00:00</h1>
+
+<div>
+    <label for="minutesInput">Minutes:</label>
+    <input id="minutesInput" type="number" @bind="Minutes" />
+</div>
+<div>
+    <label for="secondsInput">Seconds:</label>
+    <input id="secondsInput" type="number" @bind="Seconds" />
+</div>
+<button @onclick="StartCountdown">Start Countdown</button>
+<button @onclick="StopCountdown">Stop Countdown</button>
 
 @code {
+protected int Minutes { get; set; }
+protected int Seconds { get; set; }
 
-    string theTime;
-    Timer aTimer;
-
-    protected override void OnInitialized()
-    {
-        // Set up a System.Threading.Timer to call Tick every 1000 milliseconds
-        aTimer = new Timer()
-    }
-
-    private void Tick(object state)
-    {
-        // Update theTime within the context of the main thread using InvokeAsync
-        InvokeAsync(() =>
-        {
-            theTime = DateTime.Now.ToLongTimeString();
-            StateHasChanged();
-        });
-    }
-
-    public void Dispose()
-    {
-        aTimer?.Dispose();
-    }
+protected override async Task OnAfterRenderAsync(bool firstRender)
+{
+if (firstRender)
+{
+await JSRuntime.InvokeVoidAsync("timer.startCountdown", Minutes, Seconds);
 }
+}
+
+protected async Task StartCountdown()
+{
+await JSRuntime.InvokeVoidAsync("timer.startCountdown", Minutes, Seconds);
+}
+
+protected async Task StopCountdown()
+{
+await JSRuntime.InvokeVoidAsync("timer.stopCountdown");
+}
+}
+
+
+<script>
+    window.timer = {
+        timerInterval: null,
+        totalSeconds: 0,
+
+        startCountdown: function(minutes, seconds) {
+            timer.totalSeconds = minutes * 60 + seconds;
+
+            if (timer.totalSeconds <= 0) {
+                alert("Please enter a valid time.");
+                return;
+            }
+
+            timer.timerInterval = setInterval(timer.updateTimer, 1000);
+            timer.updateTimer();
+        },
+
+        stopCountdown: function() {
+            clearInterval(timer.timerInterval);
+        },
+
+        updateTimer: function() {
+            const minutes = Math.floor(timer.totalSeconds / 60);
+            const seconds = timer.totalSeconds % 60;
+            const formattedTime = timer.formatTime(minutes) + ":" + timer.formatTime(seconds);
+
+            document.getElementById('timer').innerText = formattedTime;
+
+            if (timer.totalSeconds === 0) {
+                clearInterval(timer.timerInterval);
+                alert("Countdown completed!");
+            } else {
+                timer.totalSeconds--;
+            }
+        },
+
+        formatTime: function(time) {
+            return time < 10 ? "0" + time : time;
+        }
+    };
+
+
+</script>

@@ -15,7 +15,6 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)mudblazor\6.19.1\buildTransitive\MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor\6.19.1\buildTransitive\MudBlazor.props')" />
-    <Import Project="$(NuGetPackageRoot)heron.mudcalendar\1.1.1\buildTransitive\Heron.MudCalendar.props" Condition="Exists('$(NuGetPackageRoot)heron.mudcalendar\1.1.1\buildTransitive\Heron.MudCalendar.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">C:\Users\dream\.nuget\packages\microsoft.aspnetcore.components.webassembly.server\8.0.4</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
