@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("temperus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d47f2747c7b0c0012ec8dca94df5288e5b59789f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40ae0ef95ab49ccef959522565098df61c727791")]
 [assembly: System.Reflection.AssemblyProductAttribute("temperus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("temperus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,7 +2,6 @@
 
 @page "/Timer"
 
-
 <h1 id="timer">00:00</h1>
 
 <div>
@@ -13,24 +12,17 @@
     <label for="secondsInput">Seconds:</label>
     <input id="secondsInput" type="number" @bind="Seconds" />
 </div>
-<button @onclick="StartCountdown">Start Countdown</button>
-<button @onclick="StopCountdown">Stop Countdown</button>
+<MudButton Color="Color.Primary" OnClick="@StartCountdown">Start Countdown</MudButton>
+<MudButton Color="Color.Secondary" OnClick="@StopCountdown">Stop Countdown</MudButton>
 
 @code {
 protected int Minutes { get; set; }
 protected int Seconds { get; set; }
 
-protected override async Task OnAfterRenderAsync(bool firstRender)
-{
-if (firstRender)
-{
-await JSRuntime.InvokeVoidAsync("timer.startCountdown", Minutes, Seconds);
-}
-}
-
 protected async Task StartCountdown()
 {
 await JSRuntime.InvokeVoidAsync("timer.startCountdown", Minutes, Seconds);
+Console.WriteLine("Start button");
 }
 
 protected async Task StopCountdown()
@@ -39,13 +31,13 @@ await JSRuntime.InvokeVoidAsync("timer.stopCountdown");
 }
 }
 
-
 <script>
     window.timer = {
         timerInterval: null,
         totalSeconds: 0,
 
         startCountdown: function(minutes, seconds) {
+            alert("start button pressed");
             timer.totalSeconds = minutes * 60 + seconds;
 
             if (timer.totalSeconds <= 0) {
@@ -80,6 +72,4 @@ await JSRuntime.InvokeVoidAsync("timer.stopCountdown");
             return time < 10 ? "0" + time : time;
         }
     };
-
-
 </script>
