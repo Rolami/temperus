@@ -1,0 +1,32 @@
+@page "/"
+
+@implements IDisposable
+
+<p>@theTime</p>
+
+@code {
+
+    string theTime;
+    Timer aTimer;
+
+    protected override void OnInitialized()
+    {
+        // Set up a System.Threading.Timer to call Tick every 1000 milliseconds
+        aTimer = new Timer()
+    }
+
+    private void Tick(object state)
+    {
+        // Update theTime within the context of the main thread using InvokeAsync
+        InvokeAsync(() =>
+        {
+            theTime = DateTime.Now.ToLongTimeString();
+            StateHasChanged();
+        });
+    }
+
+    public void Dispose()
+    {
+        aTimer?.Dispose();
+    }
+}

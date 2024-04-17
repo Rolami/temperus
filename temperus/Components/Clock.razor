@@ -1,0 +1,45 @@
+
+<MudText Typo="Typo.h5" Class="ml-3">@CurrentTime</MudText>
+
+@* @code { *@
+@*     private string CurrentTime { get; set; } *@
+@*     private System.Threading.Timer timer; *@
+@* *@
+@*     protected override void OnInitialized() *@
+@*     { *@
+@*         timer = new System.Threading.Timer(UpdateCurrentTime, null, 0, 1000); *@
+@*     } *@
+@* *@
+@*     private void UpdateCurrentTime(object state) *@
+@*     { *@
+@*         CurrentTime = DateTime.Now.ToShortTimeString(); *@
+@*         InvokeAsync(StateHasChanged); *@
+@*     } *@
+@* *@
+@*     public void Dispose() *@
+@*     { *@
+@*         timer.Dispose(); *@
+@*     } *@
+@* } *@
+@* *@
+
+@code {
+    private string CurrentTime { get; set; }
+    private System.Threading.Timer timer;
+
+    protected override void OnInitialized()
+    {
+        timer = new System.Threading.Timer(UpdateCurrentTime, null, 0, 1000);
+    }
+
+    private void UpdateCurrentTime(object state)
+    {
+        CurrentTime = DateTime.Now.ToString();
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        timer.Dispose();
+    }
+}

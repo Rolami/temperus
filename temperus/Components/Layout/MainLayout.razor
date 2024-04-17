@@ -1,23 +1,35 @@
 ﻿@inherits LayoutComponentBase
+@* Calendar imports *@
+<link href="_content/Heron.MudCalendar/Heron.MudCalendar.min.css" rel="stylesheet" />
+<script src="_content/Heron.MudCalendar/Heron.MudCalendar.js"></script>
+@* Calendar imports *@
 
-<MudThemingProvider />
+<MudThemeProvider @ref="@_mudThemeProvider" @bind-IsDarkMode="@_isDarkMode"/>
 <MudLayout>
     <MudAppBar Elevation="1">
-        <MudText Typo="Typo.h5" Class="ml-3">Application</MudText>
+        <MudText Typo="Typo.h5" Class="ml-3">Welcome to @_today, today is your day.</MudText>
+        <Clock/>
     </MudAppBar>
-    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
-        <NavMenu />
-    </MudDrawer>
+    @* <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2"> *@
+    @*     <NavMenu /> *@
+    @* </MudDrawer> *@
     <MudMainContent Class="mt-16 pa-4">
         @Body
+
     </MudMainContent>
 </MudLayout>
 
 @code {
+    
+    private readonly string _today = DateTime.Now.DayOfWeek.ToString();
+    
+    
+    
+    private MudThemeProvider _mudThemeProvider;
+    private bool _isDarkMode = true;
+
+
     private bool _drawerOpen = true;
 
-    private void DrawerToggle()
-    {
-        _drawerOpen = !_drawerOpen;
-    }
+
 }
