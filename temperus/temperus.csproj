@@ -9,7 +9,8 @@
   
   
   <ItemGroup>
-    <ProjectReference Include="..\temperus.Client\temperus.Client.csproj" />
+
+    <ProjectReference Include="../temperus.Client/temperus.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.*" />
   </ItemGroup>
 
