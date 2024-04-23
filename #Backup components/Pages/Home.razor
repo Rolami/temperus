@@ -1,0 +1,34 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+
+<MudGrid Justify="Justify.SpaceBetween">
+    <MudPaper Height="400px" Width="400px">
+    
+        <MudContainer MaxWidth="MaxWidth.Small" Justify="Justify.Center">
+            <MudPaper Height="400px" Width="400px" Square="true" Class="d-flex justify-center flex-grow-1 gap-4" Elevation="0">
+
+                <Timer />
+
+
+                <Calendar/>
+        
+            
+            </MudPaper>
+        </MudContainer>
+    
+    </MudPaper>
+    
+    <MudContainer MaxWidth="MaxWidth.Small" Justify="Justify.Center">
+    <MudPaper Height="400px" Width="400px" Square="true" Class="d-flex justify-center flex-grow-1 gap-4" Elevation="3">
+        
+        <iframe style="width:100%;height:100%" src="https://www.youtube.com/embed/k9ts6p63ns0" 
+                title="ADHD Music - Focus Music for Better Concentration, Study Music for ADD"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+    </MudPaper>
+    </MudContainer>
+
+
+</MudGrid>

@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\dream\\Repos\\temperus\\temperus.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Repos\\temperus\\temperus.Client\\obj\\Debug\\net8.0\\compressed\\bc5k54graj.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Repos\\temperus\\temperus.Client\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Repos\\temperus\\temperus.Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.temperus.Client.props",
+      "PackagePath": "build\\temperus.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.temperus.Client.props",
+      "PackagePath": "buildMultiTargeting\\temperus.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.temperus.Client.props",
+      "PackagePath": "buildTransitive\\temperus.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.temperus.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

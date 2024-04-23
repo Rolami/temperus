@@ -1,0 +1,30 @@
+@page "/Ctimer"
+@rendermode InteractiveWebAssembly
+<h3>Current Time: @currentTime</h3>
+
+@code {
+    private string currentTime = DateTime.Now.ToString();
+    private System.Threading.Timer timer;
+
+    protected override void OnInitialized()
+    {
+        timer = new System.Threading.Timer(UpdateTime, null, 0, 1000);
+    }
+
+    private void UpdateTime(object state)
+    {
+        InvokeAsync(() =>
+        {
+            currentTime = DateTime.Now.ToString();
+            StateHasChanged();
+        });
+    }
+
+    public void Dispose()
+    {
+        timer?.Dispose();
+    }
+}
+
+
+

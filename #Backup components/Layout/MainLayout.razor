@@ -1,0 +1,32 @@
+﻿@inherits LayoutComponentBase
+
+
+<MudThemeProvider @ref="@_mudThemeProvider" @bind-IsDarkMode="@_isDarkMode"/>
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudText Typo="Typo.h5" Class="ml-3">Welcome to @_today, today is your day. |   </MudText>
+        <Timer/>
+    </MudAppBar>
+    @* <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2"> *@
+    @*     <NavMenu /> *@
+    @* </MudDrawer> *@
+    <MudMainContent Class="mt-16 pa-4">
+        @Body
+
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    
+    private readonly string _today = DateTime.Now.DayOfWeek.ToString();
+    
+    
+    
+    private MudThemeProvider _mudThemeProvider;
+    private bool _isDarkMode = true;
+
+
+    private bool _drawerOpen = true;
+
+
+}

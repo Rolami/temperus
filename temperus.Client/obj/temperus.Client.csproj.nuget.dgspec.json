@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dream\\Repos\\Examensarbete\\temperus\\temperus.Client\\temperus.Client.csproj": {}
+    "C:\\Users\\dream\\Repos\\temperus\\temperus.Client\\temperus.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dream\\Repos\\Examensarbete\\temperus\\temperus.Client\\temperus.Client.csproj": {
+    "C:\\Users\\dream\\Repos\\temperus\\temperus.Client\\temperus.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dream\\Repos\\Examensarbete\\temperus\\temperus.Client\\temperus.Client.csproj",
+        "projectUniqueName": "C:\\Users\\dream\\Repos\\temperus\\temperus.Client\\temperus.Client.csproj",
         "projectName": "temperus.Client",
-        "projectPath": "C:\\Users\\dream\\Repos\\Examensarbete\\temperus\\temperus.Client\\temperus.Client.csproj",
+        "projectPath": "C:\\Users\\dream\\Repos\\temperus\\temperus.Client\\temperus.Client.csproj",
         "packagesPath": "C:\\Users\\dream\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dream\\Repos\\Examensarbete\\temperus\\temperus.Client\\obj\\",
+        "outputPath": "C:\\Users\\dream\\Repos\\temperus\\temperus.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,13 +56,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.2, )",
+              "version": "[8.0.4, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )",
+              "version": "[8.0.4, )",
               "autoReferenced": true
             },
             "MudBlazor": {
@@ -85,7 +84,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.3, 8.0.3]"
+              "version": "[8.0.4, 8.0.4]"
             }
           ],
           "frameworkReferences": {
@@ -93,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

@@ -1,0 +1,73 @@
+@page"/Timer"
+
+@if (IsRunning)
+{
+    <p>@Time</p>
+}
+else
+{
+    <p>Countdown stopped</p>
+}
+
+@code {
+    private System.Timers.Timer _timer;
+    private int _secondsToRun;
+    protected string Time { get; set; } = "00:00";
+    protected bool IsRunning { get; set; } = false;
+
+    [Parameter]
+    public EventCallback TimerOut { get; set; }
+
+    public async Task StartCountdown(int secondsToRun)
+    {
+        if (IsRunning)
+            return;
+
+        _secondsToRun = secondsToRun;
+
+        if (_secondsToRun > 0)
+        {
+            IsRunning = true;
+            Time = TimeSpan.FromSeconds(_secondsToRun).ToString(@"mm\:ss");
+            _timer.Start();
+        }
+    }
+
+    public void StopCountdown()
+    {
+        IsRunning = false;
+        _timer.Stop();
+    }
+
+    protected override void OnInitialized()
+    {
+        _timer = new System.Timers.Timer(1000);
+        _timer.Elapsed += OnTimedEvent;
+        _timer.AutoReset = true;
+    }
+
+    private async void OnTimedEvent(object? sender, ElapsedEventArgs e)
+    {
+        if (_secondsToRun > 0)
+        {
+            _secondsToRun--;
+
+            await InvokeAsync(() =>
+            {
+                Time = TimeSpan.FromSeconds(_secondsToRun).ToString(@"mm\:ss");
+            });
+
+            if (_secondsToRun <= 0)
+            {
+                _timer.Stop();
+                IsRunning = false;
+                await TimerOut.InvokeAsync();
+            }
+        }
+    }
+
+    public void Dispose()
+    {
+        _timer.Dispose();
+    }
+}

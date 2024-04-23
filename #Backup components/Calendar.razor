@@ -1,0 +1,65 @@
+@using System.Globalization
+
+<div class="calendar">
+    <div class="month">
+        @CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(DateTime.Today.Month) @DateTime.Today.Year
+    </div>
+    <div class="week-days">
+        @for (int i = 1; i <= 7; i++)
+        {
+            <div class="day-of-week">@CultureInfo.CurrentCulture.DateTimeFormat.GetAbbreviatedDayName((DayOfWeek)((i + (int)CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek - 1) % 7))</div>
+        }
+    </div>
+    <div class="days">
+        @foreach (var day in Enumerable.Range(1, DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month)))
+        {
+            <div class="day @(day == DateTime.Today.Day ? "today" : "")">@day</div>
+        }
+    </div>
+</div>
+
+
+<style>
+    .calendar {
+        border: lightcyan 1px solid;
+        mso-border-shadow: yes;
+        border-radius: 3px;
+        padding: 10px;
+        width: 300px;
+        margin: auto;
+    }
+
+    .month {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .week-days {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .day-of-week {
+        width: calc(100% / 7);
+        text-align: center;
+    }
+
+    .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+    }
+
+    .day {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .today {
+        background-color: darkgoldenrod;
+    }
+</style>
